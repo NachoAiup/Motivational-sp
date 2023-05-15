@@ -1,0 +1,45 @@
+.rightAside {
+    grid-row-start: 2;
+    grid-column-start: 3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 16px;
+}
+
+.leftAside {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.app {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr auto;
+    gap: 0px 0px;
+    grid-template-areas:
+        "Header Header Header"
+        "Main Main Main"
+        "Footer Footer Footer";
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    color: white;
+}
+
+footer {
+    grid-area: Footer;
+    padding: 24px;
+    text-align: center;
+}
+
+header {
+    grid-area: Header;
+    padding: 12px 24px;
+    display: block;
+}
